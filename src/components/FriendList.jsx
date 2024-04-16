@@ -44,7 +44,7 @@ function FriendList() {
 
   return (
     <div style={container}>
-      <h1 style={textStyle}>Comment</h1>
+      <h1 style={textStyle}>Post</h1>
       <div>
         <input 
           style={inputStyle} 
@@ -57,7 +57,7 @@ function FriendList() {
           style={buttonStyle}
           onClick={handleCommentClick}
         >
-          Comment
+          Create
         </button>
       </div>
       <div>
