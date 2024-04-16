@@ -29,7 +29,7 @@ function Navbar() {
       <div>
         <nav style={navColor}>
           <Link to="/">
-            <button style={buttonStyles}>Home</button>
+            <img src="https://i.imgur.com/042WKc1.png" style={buttonStyles}></img>
           </Link>
           <div style={floatRight}>
             <input style={Object.assign({}, searchbarStyles, borderRadius)} type="text" placeholder="Search"/>
