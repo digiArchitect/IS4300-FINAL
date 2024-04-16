@@ -1,21 +1,21 @@
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React from "react";
+
+import Home from "./Home";
+import User from "./User";
+import Comments from "./Comments";
 import Navbar from './Navbar';
-import Scroll from './Scroll';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import User from './User';
 
 function App() {
-  let setting = {
-    backgroundColor: '#FBF9F1'
-  };
   return (
-    <div style={setting}>
+    <Router>
       <Navbar/>
-        <div>
-          <Scroll/>
-        </div>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/Comments" element={<Comments/>} />
+        <Route path="/User" element={<User/>} />
+      </Routes>
+    </Router>
   );
 }
-
-export default App;
+  export default App;

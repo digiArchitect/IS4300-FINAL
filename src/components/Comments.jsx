@@ -1,7 +1,6 @@
 import React from 'react';
 import Post from './Post';
 import FriendList  from './FriendList';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 
 function Comments() {
@@ -11,7 +10,7 @@ function Comments() {
     marginRight: 'auto'
   }
   let comments = {
-    marginTop: "-100px"
+    marginTop: "-100px",
   }
   
   return (

@@ -14,7 +14,7 @@ function User() {
     marginRight: '25px',
     backgroundColor: '#FBF9F1'
   };
-  let comments = {
+  let forFriends = {
     marginLeft: '30px',
     marginTop: '80px',
   };
@@ -31,7 +31,7 @@ function User() {
           <div>
             <Feed />
           </div>
-          <div style={comments}>
+          <div>
           <FriendList />
           </div>
         </div>

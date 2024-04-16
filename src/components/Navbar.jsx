@@ -1,6 +1,5 @@
 import React from 'react';
-import App from './App';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Link } from 'react-router-dom'; // <-- Add this line
 
 function Navbar() {
   let floatRight = {
@@ -27,23 +26,17 @@ function Navbar() {
   }
 
   return (
-    <BrowserRouter>
       <div>
         <nav style={navColor}>
-          <Link to="app">
+          <Link to="/">
             <button style={buttonStyles}>Home</button>
           </Link>
-          <Routes>
-            <Route path="/App" element={<App />} />
-          </Routes>
           <div style={floatRight}>
             <input style={Object.assign({}, searchbarStyles, borderRadius)} type="text" placeholder="Search"/>
-            <button style={Object.assign({}, buttonStyles, borderRadius)}>Tweet</button>
           </div>
         </nav>
         <hr/>
       </div>
-    </BrowserRouter> 
   );
 }
 

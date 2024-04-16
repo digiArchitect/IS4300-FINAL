@@ -8,7 +8,7 @@ function Feed() {
     backgroundColor: '#FBF9F1'
   }
   let headText ={
-    marginLeft: '200px',
+    marginLeft: '250px',
     color: "#92C7CF"
   }
   return (

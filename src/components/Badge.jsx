@@ -13,6 +13,7 @@ function Badge() {
     width: '300px',
     height: '300px',
     marginBottom: '100px',
+   
     backgroundColor: '#92C7CF'
   }
   let nameFloat={
