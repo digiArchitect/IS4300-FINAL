@@ -1,6 +1,7 @@
 import React from 'react';
 import Post from './Post';
 import User from './User';
+import Comments from './Comments';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 
@@ -16,6 +17,7 @@ function Scroll() {
       <BrowserRouter>
       <Routes>
       <Route path="/User" element={<User/>}  />
+      <Route path="/Comments" element={<Comments/>}  />
       </Routes>
       <li> 
         <Link to="user">
@@ -25,12 +27,16 @@ function Scroll() {
       text="New album check it out."/>  
       </Link>
        </li>
-      </BrowserRouter>
-
+     
+       <li> 
+        <Link to="comments">
       <Post
       img="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Sketch_of_the_Mona_Lisa_by_Raphael.jpg/428px-Sketch_of_the_Mona_Lisa_by_Raphael.jpg"
       name="By: Raffaello Sanzio da Urbino"
       text="A study I did of the Mona Lisa! What do you think? Looking for general crit, how's my linework?"/>
+      </Link>
+       </li>
+       </BrowserRouter>
       <Post
       img="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/608px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg"
       name="By: Vincent van Gogh"

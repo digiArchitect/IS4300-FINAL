@@ -14,6 +14,12 @@ function User() {
     marginRight: '25px',
     backgroundColor: '#FBF9F1'
   };
+  let comments = {
+    marginLeft: '30px',
+    marginTop: '80px',
+  };
+
+
 
   return (
       <div>    
@@ -25,8 +31,8 @@ function User() {
           <div>
             <Feed />
           </div>
-          <div>
-            <FriendList />
+          <div style={comments}>
+          <FriendList />
           </div>
         </div>
       </div>

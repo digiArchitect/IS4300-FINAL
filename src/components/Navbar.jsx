@@ -1,8 +1,6 @@
 import React from 'react';
-import app from './app';
-
+import App from './App';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-
 
 function Navbar() {
   let floatRight = {
@@ -14,7 +12,8 @@ function Navbar() {
   let buttonStyles = {
     padding: '10px 10px 10px 10px',
     backgroundColor:  '#FBF9F1',
-    width: '100px'  }
+    width: '100px'
+  }
   let searchbarStyles = {
     height: '30px',
     marginRight: '40px',
@@ -23,20 +22,28 @@ function Navbar() {
     backgroundColor:  '#FBF9F1'
   }
   let borderRadius = {
-    borderRadius: '15px 15px 15px 15px',
+    borderRadius: '15px',
     border: '2px solid #34abef'
   }
+
   return (
-    <div>
-      <nav style={navColor}>
-        <button style={buttonStyles}>Home</button>
-        <div style={floatRight}>
-          <input style={Object.assign({}, searchbarStyles, borderRadius)} type="text" placeholder="Search"/>
-          <button style={Object.assign({}, buttonStyles, borderRadius)}>Tweet</button>
-        </div>
-      </nav>
-      <hr/>
-    </div>
+    <BrowserRouter>
+      <div>
+        <nav style={navColor}>
+          <Link to="app">
+            <button style={buttonStyles}>Home</button>
+          </Link>
+          <Routes>
+            <Route path="/App" element={<App />} />
+          </Routes>
+          <div style={floatRight}>
+            <input style={Object.assign({}, searchbarStyles, borderRadius)} type="text" placeholder="Search"/>
+            <button style={Object.assign({}, buttonStyles, borderRadius)}>Tweet</button>
+          </div>
+        </nav>
+        <hr/>
+      </div>
+    </BrowserRouter> 
   );
 }
 

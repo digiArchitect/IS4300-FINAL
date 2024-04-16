@@ -5,8 +5,7 @@ function FriendList() {
   const [commentsList, setCommentsList] = useState([]);
 
   let container = {
-    marginLeft: '30px',
-    marginTop: '80px',
+  
     backgroundColor: '#FBF9F1',
     border: '2px solid lightgray',
     paddingLeft: '15px',
@@ -45,7 +44,7 @@ function FriendList() {
 
   return (
     <div style={container}>
-      <h1 style={textStyle}>Leave an anonymous comment on my page</h1>
+      <h1 style={textStyle}>Comments</h1>
       <div>
         <input 
           style={inputStyle} 
