@@ -9,8 +9,9 @@ function Post(props) {
     display: 'flex',
     alignItems: 'center', // Vertical alignment
     marginBottom: '20px', // Spacing between posts
-    height: 'auto', // Setting height to auto to adjust to content
-    width: '500px'
+    marginLeft: "50px",
+    height: 'auto', 
+    width: '750px'
   };
 
   let image = {

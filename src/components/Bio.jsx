@@ -3,6 +3,7 @@ import React from 'react';
 function Bio(){
   let container={
     marginTop: '15px',
+    marginBottom: "50px",
     border: '2px solid #92C7CF',
     width: '296px'
   }

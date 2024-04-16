@@ -9,8 +9,8 @@ function FriendList() {
     backgroundColor: '#FBF9F1',
     border: '2px solid lightgray',
     paddingLeft: '15px',
-    color: '#777777'
-
+    color: '#777777',
+    width: '500px'
   };
 
   let textStyle = {
@@ -19,7 +19,7 @@ function FriendList() {
 
   let inputStyle = {
     height: '30px',
-    width: '200px',
+    width: '300px',
     border: '5px solid #00ddff'
   };
 
@@ -44,7 +44,7 @@ function FriendList() {
 
   return (
     <div style={container}>
-      <h1 style={textStyle}>Comments</h1>
+      <h1 style={textStyle}>Comment</h1>
       <div>
         <input 
           style={inputStyle} 

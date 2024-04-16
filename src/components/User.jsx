@@ -15,8 +15,8 @@ function User() {
     backgroundColor: '#FBF9F1'
   };
   let forFriends = {
-    marginLeft: '30px',
-    marginTop: '80px',
+    marginLeft: '50px',
+    marginTop: '90px'
   };
 
 
@@ -26,13 +26,14 @@ function User() {
         <div style={columns}>
           <div>
             <Badge />
-            <Bio />
+            <Bio/>
+            <FriendList style={forFriends}/>
           </div>
           <div>
             <Feed />
           </div>
           <div>
-          <FriendList />
+         
           </div>
         </div>
       </div>
