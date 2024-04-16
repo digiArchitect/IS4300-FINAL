@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
 
 function Post(props) {
   let container = {
@@ -13,13 +15,14 @@ function Post(props) {
 
   let image = {
     width: '100%',
+    border: '2px solid #34abef',
     height: '100%', // Making the image fill the div's height
     objectFit: 'cover' // To ensure the image covers the div without stretching
   };
 
   return (
     <div style={container}>
-      <figure style={{ margin: 0, width: '100%', height: '100%' }}>
+      <figure style={{margin: 0, width: '100%', height: '100%' }}>
         <img style={image} src={props.img} alt={props.name} />
         <figcaption style={{ textAlign: 'center', paddingTop: '10px' }}>
           <strong>{props.name}</strong> <br />

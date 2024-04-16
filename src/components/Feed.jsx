@@ -15,7 +15,7 @@ function Feed() {
 
     <div style={container}>
       <div>
-      <h1 style={headText}>My art</h1>
+      <h1 style={headText}>My Art</h1>
     </div>
       <a href="https://open.spotify.com/album/4NP1rhnsPdYpnyJP0p0k0L?si=ZRrEY2j9RfuLKiwbDlwItQ">
       <Post

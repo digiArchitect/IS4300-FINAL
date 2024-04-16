@@ -1,5 +1,5 @@
 {
-  "name": "social-media-clone",
+  "name": "Create Hub",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server"
   },
-  "author": "",
+  "author": "Jylah Bah",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.0",

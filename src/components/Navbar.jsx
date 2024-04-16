@@ -1,4 +1,8 @@
 import React from 'react';
+import app from './app';
+
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
 
 function Navbar() {
   let floatRight = {
@@ -26,8 +30,6 @@ function Navbar() {
     <div>
       <nav style={navColor}>
         <button style={buttonStyles}>Home</button>
-        <button style={buttonStyles}>Notifications</button>
-        <button style={buttonStyles}>Messages</button>
         <div style={floatRight}>
           <input style={Object.assign({}, searchbarStyles, borderRadius)} type="text" placeholder="Search"/>
           <button style={Object.assign({}, buttonStyles, borderRadius)}>Tweet</button>
